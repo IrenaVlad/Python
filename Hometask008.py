@@ -6,8 +6,9 @@
 
 n = int(input("Введите число: "))
 a = []
-while len(a) < n+3:
-    n = (1+ 1/n)**n
-    a.append(n)
+b = 0
+for i in range(1,n+1):
+    b = round((1+ 1/i)**i,3)
+    a.append(b)
 print(a)
 print(round(sum(a), 3))
