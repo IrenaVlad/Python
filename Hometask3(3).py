@@ -5,8 +5,7 @@
 
 a = [1.1, 1.2, 3.1, 5, 10.01]
 b = []
-for i in range(len(a)-1):
-    a[i] = a.split('.')
-    c = a[1]
-    b.append(c)
+for i in a:
+    if i%1 !=0:
+        b.append(round(i%1,2))
 print(max(b) - min(b))
