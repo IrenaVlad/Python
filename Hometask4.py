@@ -4,10 +4,11 @@
 
 from random import randint
 
-k = int(input('Введите натуральную степень к: '))
+k = int(input('Введите натуральную степень k: '))
 a = int(randint(0, 100))
 b = int(randint(0, 100))
 c = int(randint(0, 100))
+print(a, b, c)
 with open('file.txt', 'w') as data:
-    data.write('a * x**k + b * x + c = 0')
+    data.write()
 data.close()
