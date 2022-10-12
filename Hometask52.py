@@ -11,7 +11,7 @@ def take_input(player_token):
         player_answer = input("Куда поставим" + player_token +"?")
         try:
             player_answer = int(player_answer)
-        except:
+        except: #valueerror
             print("Вводить числа от 1 до 9")
             continue
         if 1<= player_answer <= 9:
@@ -52,7 +52,7 @@ def main(board):
     draw_board(board)
 
 
-if __name__ == '__Seminar55__':
+if __name__ == '__main__':
         print("Игра крестики-нолики для 2-х игроков")
         board = list(range(1, 10))
 
