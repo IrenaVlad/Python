@@ -34,11 +34,11 @@ def rle_decode(data):
 if __name__ == '__main__':
     decoder_val = rle_decode('4W3A5S')
     print(decoder_val)
-    with open("decode.txt", "r") as file:
-        file.write('{decoder_val}')
+    with open("decode.txt", "w") as data:
+        data.write(decoder_val)
 
-    with open("encode.txt", "r") as file:
-        readfile = file.read()
+    with open("encode.txt", "r") as data:
+        readfile = data.read()
     encoder_val = rle_encode(readfile)
     print(encoder_val)
         
