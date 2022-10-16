@@ -59,85 +59,81 @@
 #    присутствующих в правом операнде.
 
 # Управляющие конструкции 
-username = input('Введите имя: ')
-if username == 'Маша':
-    print('Ура, это же МАША!')
-elif username == 'Марина':
-    print('Я так ждала Вас, Марина!')
-elif username == 'Ильнар':
-    print('Ильнар - топ)')
-else:
-    print('Привет, ', username)
+# username = input('Введите имя: ')
+# if username == 'Маша':
+  #  print('Ура, это же МАША!')
+# elif username == 'Марина':
+  #  print('Я так ждала Вас, Марина!')
+# elif username == 'Ильнар':
+  #  print('Ильнар - топ)')
+#else:
+ #   print('Привет, ', username)
 
-Управляющие конструкции: while
-  original = 23
- inverted = 0
- while original != 0:
-     inverted = inverted * 10 + (original % 10)
-     original //= 10
- print(inverted)
+# Управляющие конструкции: while
+  # original = 23
+ # inverted = 0
+ # while original != 0:
+     # inverted = inverted * 10 + (original % 10)
+     # original //= 10
+ # print(inverted)
 
-While-else
-original = 23
- inverted = 0
- while original != 0:
-     inverted = inverted * 10 + (original % 10)
-     original //= 10
- else:
-     print('Пожалуй')
-     print('хватит )')
- print(inverted)
- # Пожалуй
- # хватит )
- # 32
+# While-else
+# original = 23
+ # inverted = 0
+ # while original != 0:
+   #  inverted = inverted * 10 + (original % 10)
+    # original //= 10
+ # else:
+   #  print('Пожалуй')
+    # print('хватит )')
+ # print(inverted)  #32
   
-    Управляющие конструкции: for
- for i in 1, -2, 3, 14, 5:
-     print(i)
+    # Управляющие конструкции: for
+ # for i in 1, -2, 3, 14, 5:
+   #  print(i)
 #1 # -2 #3 # 14 #5
  
-Range 
-r = range(5) # range(0, 5)
-r = range(2, 5)
-r = range(100, 0, -20)
+# Range 
+# r = range(5) # range(0, 5)
+# r = range(2, 5)
+# r = range(100, 0, -20)
 
-r = range(100, 0, -20) 
- for i in r:
-     print(i)
- # 100 80  60 40 20
- for i in range(5):
-     print(i)
-#0123 4
+#r = range(100, 0, -20) 
+ #for i in r:
+  #   print(i)  # 100 80  60 40 20
 
-Вложенные циклы
-line = ""
- for i in range(5):
-     line = ""
-     for j in range(5):
-         line += "*"
-     print(line)
+ #for i in range(5):
+  #   print(i)  #0123 4
 
-Строки
- text = 'съешь ещё этих мягких французских булок'
-  print(len(text))
-print('ещё' in text) print(text.isdigit()) print(text.islower()) print(text.replace('ещё','ЕЩЁ')) #
-for c in text:
-    print(c)
+# Вложенные циклы
+# line = ""
+ # for i in range(5):
+   #  line = ""
+    # for j in range(5):
+     #    line += "*"
+     # print(line)
 
-Немного о строках
- text = 'съешь ещё этих мягких французских булок'
- print(text[0])   # c
- print(text[1])   # ъ
- print(text[len(text)-1])  # к
- print(text[-5])  # б
- print(text[:])   # print(text)
- print(text[:2])  # съ
- print(text[len(text)-2:])  # ок
- print(text[2:9])  # ешь ещё
- print(text[6:-18])  # ещё этих мягких
- print(text[0:len(text):6])  # сеикакл
- print(text[::6])  # сеикакл
- text = text[2:9] + text[-5] + text[:2] # ...
+# Строки
+ # text = 'съешь ещё этих мягких французских булок'
+  # print(len(text))
+# print('ещё' in text) print(text.isdigit()) print(text.islower()) print(text.replace('ещё','ЕЩЁ')) #
+# for c in text:
+  #  print(c)
+
+# Немного о строках
+ # text = 'съешь ещё этих мягких французских булок'
+ #print(text[0])   # c
+# print(text[1])   # ъ
+ #print(text[len(text)-1])  # к
+# print(text[-5])  # б
+# print(text[:])   # print(text)
+# print(text[:2])  # съ
+# print(text[len(text)-2:])  # ок
+# print(text[2:9])  # ешь ещё
+# print(text[6:-18])  # ещё этих мягких
+# print(text[0:len(text):6])  # сеикакл
+# print(text[::6])  # сеикакл
+# text = text[2:9] + text[-5] + text[:2] # ...
 
 
 # Списки 
